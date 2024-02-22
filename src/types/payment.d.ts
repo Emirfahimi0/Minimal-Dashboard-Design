@@ -11,7 +11,9 @@ declare interface ITodoList {
 
 type statusPoint = "Completed" | "Elevate" | "Risking";
 
+type StatusPaymentType = "Payment" | "Credit" | "Withdrawal" | "Received";
 declare interface IPayment {
   label: string;
   payment: string;
+  statusPayment: StatusPaymentType;
 }
